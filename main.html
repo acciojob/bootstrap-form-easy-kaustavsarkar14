@@ -30,18 +30,18 @@
 		      <input id="college-input" type="text" class="form-control">
 		    </div>
 		    <div class="col-auto my-1">
-      <label class="mr-sm-2 " for="inlineFormCustomSelect">Preference</label>
-      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-        <option selected>Choose...</option>
-        <option value="1">2020</option>
-        <option value="2">2021</option>
-        <option value="3">2022</option>
-        <option value="3">2023</option>
+      <label for="grad-year-select" class="mr-sm-2 " for="inlineFormCustomSelect">Preference</label>
+      <select id="grad-year-select" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+        <option id="grad-year-select" selected>Choose...</option>
+        <option id="grad-year-select" value="1">2020</option>
+        <option id="grad-year-select" value="2">2021</option>
+        <option id="grad-year-select" value="3">2022</option>
+        <option id="grad-year-select" value="3">2023</option>
       </select>
     </div>
 		    <div class="col">
 				<label for="roll-no-input" >Roll No.</label>
-	      <input id="roll-no-input" type="number" class="form-control" placeholder="xyz@abc.com">
+	      <input id="roll-no-input" type="text" class="form-control" placeholder="xyz@abc.com">
 		    </div>
 		 </div>
 
@@ -55,6 +55,7 @@
 			<div class="col-auto my-1">
       <button type="submit" class="btn btn-primary">Submit Form</button>
     </div>
+			<div id="invalid-feedback" ></div>
 	</form>
     <script type="text/javascript" src="./script.js">
 </script>
