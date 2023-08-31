@@ -13,7 +13,8 @@
 		<div class="row">
 		    <div class="col">
 				<label for="first-name-input" >First Name</label>
-		      <input id="first-name-input" type="text" class="form-control">
+		      <input id="first-name-input" required type="text" class="form-control">
+				<div class="invalid-feedback">First Name required</div>
 		    </div>
 		    <div class="col">
 				<label for="last-name-input" >Last Name</label>
@@ -30,8 +31,8 @@
 		      <input id="college-input" type="text" class="form-control">
 		    </div>
 		    <div class="col-auto my-1">
-      <label for="grad-year-select" class="mr-sm-2 " for="inlineFormCustomSelect">Preference</label>
-      <select id="grad-year-select" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+      <label for="grad-year-select" class="mr-sm-2 " for="inlineFormCustomSelect">Graduation Year</label>
+      <select id="grad-year-select" class="form-select mr-sm-2" id="inlineFormCustomSelect">
         <option id="grad-year-select" selected>Choose...</option>
         <option id="grad-year-select" value="1">2020</option>
         <option id="grad-year-select" value="2">2021</option>
@@ -49,13 +50,15 @@
 			<div class="col-auto my-1">
       <div class="custom-control custom-checkbox mr-sm-2">
         <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
-        <label class="custom-control-label" for="customControlAutosizing">Agree to terms and conditions</label>
+        <label id="conditions-checkbox" class="custom-control-label" for="customControlAutosizing">Agree to terms and conditions</label>
       </div>
 		</div>
 			<div class="col-auto my-1">
       <button type="submit" class="btn btn-primary">Submit Form</button>
+			<div class="invalid-feedback">
+        You must agree before submitting.
+      </div>
     </div>
-			<div id="invalid-feedback" ></div>
 	</form>
     <script type="text/javascript" src="./script.js">
 </script>
